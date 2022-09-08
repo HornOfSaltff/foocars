@@ -2,7 +2,7 @@ import time
 import datetime
 import logging
 import RPi.GPIO as GPIO
-import picamera
+import picamera2
 import serial
 import numpy as np
 import threading
@@ -438,7 +438,7 @@ def initialize_service():
     # pdb.set_trace()
     # initialize the camera
     global g_camera
-    g_camera=picamera.PiCamera()
+    g_camera=picamera2.PiCamera2()
     g_camera.resolution=CAMERA_RESOLUTION
     g_camera.framerate=FRAME_RATE
     # initialize the data collector object
