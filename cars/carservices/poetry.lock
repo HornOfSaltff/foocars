@@ -73,9 +73,9 @@ python-versions = ">=3.6"
 pyparsing = ">=2.0.2"
 
 [[package]]
-name = "picamera"
-version = "1.13"
-description = "A pure Python interface for the Raspberry Pi camera module."
+name = "picamera2"
+version = "0.3.3"
+description = "A pure Python interface for the Raspberry Pi camera2 module."
 category = "main"
 optional = false
 python-versions = "*"
