@@ -10,7 +10,7 @@ python = "^3.7"
 # tensorflow-cpu = {version = "^2.5.0", platform = "aarch64"}
 "RPi.GPIO" = "^0.7"
 pyserial = "^3.5"
-picamera = "^1.13"
+picamera2 = "0.3.3"
 #h5py = "^3.3.0"
 
 
