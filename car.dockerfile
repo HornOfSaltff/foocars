@@ -1,8 +1,15 @@
-FROM --platform=linux/arm64/v8 kumatea/tensorflow:2.4.1-py39 AS base
+FROM --platform=linux/arm64/v8 balenalib/raspberrypi4-64-debian-python:3.9-bullseye-build AS base
+#FROM --platform=linux/arm64/v8 kumatea/tensorflow:2.4.1-py39 AS base
 
 
 WORKDIR foocars
 ENV READTHEDOCS=True
+
+RUN pip install --upgrade pip
+#Install tensorflow
+RUN pip3 install tensorflow
+
+
 #TODO: use the get poetry install script
 RUN pip3 install --upgrade pip poetry
 RUN poetry config virtualenvs.create false
