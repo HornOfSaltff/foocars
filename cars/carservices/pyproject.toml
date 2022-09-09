@@ -13,9 +13,9 @@ pyserial = "^3.5"
 
 
 
-numpy = "^1.21.1"
-[tool.poetry.dev-dependencies]
-pytest = "^5.2"
+#numpy = "^1.21.1"
+#[tool.poetry.dev-dependencies]
+#pytest = "^5.2"
 
 [tool.poetry.scripts]
 car_runner = "carservices.carRunner:main"
